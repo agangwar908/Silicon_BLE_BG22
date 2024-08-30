@@ -1,0 +1,6 @@
+14:02:50 **** Clean-only build of configuration GNU ARM v12.2.1 - Default for project bt_serial_port_profile_server ****
+make -j12 clean 
+Command canceled
+
+14:02:53 Build Cancelled. (took 3s.674ms)
+

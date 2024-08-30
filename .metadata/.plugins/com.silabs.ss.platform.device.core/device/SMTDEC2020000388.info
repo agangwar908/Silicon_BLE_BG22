@@ -1,0 +1,4 @@
+protectFromDetectionUpdates=false
+label=SMTPL IEC1107 COMMS CORD SMTDEC2020000388 (ID:0) (SMTDEC2020000388)
+boardOverrides {
+}

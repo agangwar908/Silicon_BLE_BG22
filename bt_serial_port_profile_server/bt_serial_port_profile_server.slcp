@@ -1,0 +1,68 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: bt_serial_port_profile_server
+label: bt_serial_port_profile_server
+description: |
+  This example provides a simple template for SPP-like communication (also know as wire replacement), where Bluetooth serves as a transport channel for serial communication between server and client.
+category: Bluetooth Examples
+filter:
+- name: Device Type
+  value: [SoC]
+- name: Project Difficulty
+  value: [Advanced]
+- name: Wireless Technology
+  value: [Bluetooth]
+package: Bluetooth
+quality: experimental
+readme:
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/README.md}
+source:
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/bt_spp_server/src/main.c}
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/bt_spp_server/src/app.c}
+include:
+- path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/bt_spp_server/inc
+  file_list:
+  - {path: app.h}
+sdk: {id: gecko_sdk, version: 4.4.3}
+toolchain_settings: []
+component:
+- {id: EFR32BG22C224F512IM40}
+- {id: app_assert}
+- {id: app_log}
+- {id: bluetooth_feature_connection}
+- {id: bluetooth_feature_gatt}
+- {id: bluetooth_feature_gatt_server}
+- {id: bluetooth_feature_legacy_advertiser}
+- {id: bluetooth_feature_legacy_scanner}
+- {id: bluetooth_feature_sm}
+- {id: bluetooth_feature_system}
+- {id: bluetooth_stack}
+- {id: brd4108a}
+- {id: bt_post_build}
+- {id: component_catalog}
+- {id: gatt_configuration}
+- {id: gatt_service_device_information}
+- instance: [vcom]
+  id: iostream_usart
+- {id: mpu}
+- {id: rail_util_pti}
+other_file:
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/images/create_project.png,
+  directory: images/}
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/images/spp_terminal.gif,
+  directory: images/}
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/images/v3_launch_console.png,
+  directory: images/}
+- {path: ../../../../../Deepak Work Si lab/Customer wise work/hbeon/bluetooth_serial_port_profile/images/v3_wstk_config.png,
+  directory: images/}
+configuration:
+- condition: [iostream_usart]
+  name: SL_BOARD_ENABLE_VCOM
+  value: '1'
+- {name: SL_STACK_SIZE, value: '2752'}
+- {name: SL_HEAP_SIZE, value: '9200'}
+- {name: SL_PSA_KEY_USER_SLOT_COUNT, value: '0'}
+ui_hints:
+  highlight:
+  - {path: config/btconf/gatt_configuration.btconf}
+  - {path: README.md, focus: true}
+

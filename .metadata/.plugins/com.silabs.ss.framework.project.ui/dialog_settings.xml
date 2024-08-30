@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType">
+		<item key="importOption" value="LINK"/>
+		<list key="fileLocationHistory">
+			<item value="C:\Users\anurag.singh\Desktop\siliconlab ble"/>
+			<item value="C:\Users\anurag.singh\Desktop\BLE"/>
+		</list>
+		<list key="fileLocations">
+			<item value="C:\Users\anurag.singh\Desktop\siliconlab ble"/>
+		</list>
+	</section>
+</section>

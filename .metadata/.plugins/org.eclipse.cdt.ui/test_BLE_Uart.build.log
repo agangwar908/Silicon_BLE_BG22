@@ -1,0 +1,6 @@
+11:24:15 **** Incremental Build of configuration GNU ARM v12.2.1 - Default for project test_BLE_Uart ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+
+11:24:15 Build Finished. 0 errors, 0 warnings. (took 409ms)
+

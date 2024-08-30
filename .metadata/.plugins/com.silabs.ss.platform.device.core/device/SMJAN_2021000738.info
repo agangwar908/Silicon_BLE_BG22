@@ -1,0 +1,4 @@
+protectFromDetectionUpdates=false
+label=SMTPL IEC1107 COMMS CORD SMTJAN 2021000738 (ID:0) (SMJAN_2021000738)
+boardOverrides {
+}

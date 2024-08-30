@@ -1,0 +1,5 @@
+1720504965802	Delete resource 'bt_serial_port_profile_server'
+1720592902693	Delete resource 'test_BLE_Uart'
+1720596647839	Delete resource 'bt_soc_Test'
+1720601088067	Delete resource 'iostream_usart_baremetal'
+1720601189390	Delete resource 'bt_soc_ibeacon'
